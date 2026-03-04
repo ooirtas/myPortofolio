@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Satrio Mahdii Muhammad - Professional PortoFolio">
+    <meta name="author" content="Satrio Mahdii Muhammad">
+    <title>Satrio Mahdii Muhammad - Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <!-- Custom Design System -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body id="page-top">
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-spinner"></div>
+            <span class="preloader-text">Portofolio.</span>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a class="nav-brand" href="#page-top">Portofolio</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a class="nav-link" href="#about">About</a></li>
+                <li><a class="nav-link" href="#services">Skills</a></li>
+                <li><a class="nav-link" href="#portfolio">Project</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="bi-moon-fill"></i>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-grid" data-reveal>
+                <div class="hero-content">
+                    <p class="text-white-75">- Hello, Saya</p>
+                    <h1 class="hero-title">Satrio Mahdii Muhammad</h1>
+                    <div class="typing-container">
+                        I am a <span class="typing-text"></span>
+                    </div>
+                    <hr class="divider">
+                    <p class="mb-5">
+                        Web Developer lulusan Manajemen Informatika Politeknik Astra
+                        dengan pengalaman mengembangkan aplikasi web modern menggunakan
+                        React dan Next.js. Terbiasa membangun sistem terintegrasi,
+                        mengelola API, dan bekerja dalam tim menggunakan praktik DevOps
+                        seperti CI/CD dan Docker.
+                    </p>
+                    <a class="btn-premium" href="#about">Find Out More</a>
+                </div>
+                <div class="hero-visual">
+                    <img src="assets/img/myself.png" alt="Satrio Mahdii Muhammad" class="hero-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="bg-dark-alt">
+            <div class="container" data-reveal>
+                <div class="text-center">
+                    <h2 class="mt-0">About Me!</h2>
+                    <hr class="divider">
+                    <div style="max-width: 800px; margin: 0 auto;">
+                        <p class="mb-4">
+                            Saya adalah Programmer lulusan Manajemen Informatika dari
+                            Politeknik Astra dengan pengalaman praktis dalam pengembangan
+                            aplikasi web, desktop, dan mobile. Saya memiliki keahlian dalam
+                            membangun aplikasi web menggunakan React, Next.js, Laravel, dan
+                            Spring Boot, serta terbiasa mengintegrasikan sistem dengan
+                            database dan REST API.
+                        </p>
+                        <p class="mb-4">
+                            Saya pernah terlibat dalam pengembangan Sistem Manajemen Turnamen
+                            Golf berbasis web yang berhasil mendigitalisasi proses manual
+                            menjadi sistem real-time dan meningkatkan efisiensi hingga 80%.
+                            Selain itu, saya berpengalaman menggunakan Docker dan Azure DevOps
+                            untuk mendukung proses CI/CD dan deployment aplikasi.
+                        </p>
+                        <p class="mb-4">
+                            Saya terbiasa bekerja dalam tim, memiliki kemampuan
+                            problem solving yang baik, serta mampu beradaptasi dengan
+                            teknologi baru. Dengan latar belakang akademik dan proyek nyata,
+                            saya berkomitmen untuk membangun aplikasi web yang efisien,
+                            scalable, dan user-friendly.
+                        </p>
+                        <div class="text-center mt-2">
+                            <a class="btn-premium" href="#services">Get Started!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="services">
+            <div class="container" data-reveal>
+                <h2 class="text-center mt-0">Skills</h2>
+                <hr class="divider">
+                
+                <div class="skills-grid">
+                    <!-- Programming Language -->
+                    <article class="skill-item glass-effect" data-modal="languageModal" style="cursor: pointer;">
+                        <div class="skill-icon"><i class="bi-code-slash"></i></div>
+                        <h3 class="mb-2">Programming Language</h3>
+                        <p>Core programming skills</p>
+                    </article>
+
+                    <!-- Full-Stack Development -->
+                    <article class="skill-item glass-effect" data-modal="fullstackModal" style="cursor: pointer;">
+                        <div class="skill-icon"><i class="bi-stack"></i></div>
+                        <h3 class="mb-2">Full-Stack Development</h3>
+                        <p>End-to-end web solutions</p>
+                    </article>
+
+                    <!-- Frontend -->
+                    <article class="skill-item glass-effect" data-modal="frontendModal" style="cursor: pointer;">
+                        <div class="skill-icon"><i class="bi-laptop"></i></div>
+                        <h3 class="mb-2">Frontend</h3>
+                        <p>UI & Web Interface</p>
+                    </article>
+
+                    <!-- Backend -->
+                    <article class="skill-item glass-effect" data-modal="backendModal" style="cursor: pointer;">
+                        <div class="skill-icon"><i class="bi-hdd-stack"></i></div>
+                        <h3 class="mb-2">Backend</h3>
+                        <p>API & Server Logic</p>
+                    </article>
+
+                    <!-- Database -->
+                    <article class="skill-item glass-effect" data-modal="databaseModal" style="cursor: pointer;">
+                        <div class="skill-icon"><i class="bi-server"></i></div>
+                        <h3 class="mb-2">Database Management</h3>
+                        <p>Data Design & SQL</p>
+                    </article>
+
+                    <!-- DevOps -->
+                    <article class="skill-item glass-effect" data-modal="devopsModal" style="cursor: pointer;">
+                        <div class="skill-icon"><i class="bi-gear"></i></div>
+                        <h3 class="mb-2">DevOps & Tools</h3>
+                        <p>Deployment & CI/CD</p>
+                    </article>
+
+                    <!-- Ecosystem -->
+                    <article class="skill-item glass-effect" data-modal="ecosystemModal" style="cursor: pointer;">
+                        <div class="skill-icon"><i class="bi-window"></i></div>
+                        <h3 class="mb-2">Ecosystem & IDEs</h3>
+                        <p>Development Environments</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modals -->
+        <div id="languageModal" class="modal">
+            <div class="modal-content">
+                <button class="modal-close">&times;</button>
+                <h2 class="modal-title">Programming Languages</h2>
+                <div class="modal-body">
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>C#</li>
+                        <li>Java</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="fullstackModal" class="modal">
+            <div class="modal-content">
+                <button class="modal-close">&times;</button>
+                <h2 class="modal-title">Full-Stack Development</h2>
+                <div class="modal-body">
+                    <ul>
+                        <li>End-to-End Integration</li>
+                        <li>Architectural Patterns</li>
+                        <li>State Management</li>
+                        <li>API Orthogonality</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="frontendModal" class="modal">
+            <div class="modal-content">
+                <button class="modal-close">&times;</button>
+                <h2 class="modal-title">Frontend Development</h2>
+                <div class="modal-body">
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>Bootstrap</li>
+                        <li>React.js</li>
+                        <li>Next.js</li>
+                        <li>TypeScript</li>
+                        <li>Axios</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="backendModal" class="modal">
+            <div class="modal-content">
+                <button class="modal-close">&times;</button>
+                <h2 class="modal-title">Backend Development</h2>
+                <div class="modal-body">
+                    <ul>
+                        <li>Laravel</li>
+                        <li>Swagger</li>
+                        <li>Spring Boot</li>
+                        <li>ASP.NET MVC</li>
+                        <li>REST API</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="databaseModal" class="modal">
+            <div class="modal-content">
+                <button class="modal-close">&times;</button>
+                <h2 class="modal-title">Database</h2>
+                <div class="modal-body">
+                    <ul>
+                        <li>PostgreSQL</li>
+                        <li>MySQL</li>
+                        <li>SQL Server</li>
+                        <li>Database Management (SQL)</li>
+                        <li>SQLite</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="devopsModal" class="modal">
+            <div class="modal-content">
+                <button class="modal-close">&times;</button>
+                <h2 class="modal-title">DevOps & Tools</h2>
+                <div class="modal-body">
+                    <ul>
+                        <li>Azure DevOps</li>
+                        <li>Docker</li>
+                        <li>DevSecOps</li>
+                        <li>Git & Bitbucket</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="ecosystemModal" class="modal">
+            <div class="modal-content">
+                <button class="modal-close">&times;</button>
+                <h2 class="modal-title">Ecosystem & IDEs</h2>
+                <div class="modal-body">
+                    <ul>
+                        <li>Visual Studio</li>
+                        <li>Azure Data Studio</li>
+                        <li>VS Code</li>
+                        <li>Android Studio</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <section id="portfolio" class="bg-dark-alt">
+            <div class="container" data-reveal>
+                <h2 class="text-center mt-0">Project</h2>
+                <hr class="divider">
+                
+                <div class="projects-grid">
+                    <!-- Halo Golf Club -->
+                    <article class="project-card glass-effect">
+                        <div class="project-content">
+                            <span class="project-category">Web Application</span>
+                            <h3 class="project-title">Halo Golf Club</h3>
+                            <p class="project-desc">
+                                Sistem manajemen turnamen golf berbasis web untuk digitalisasi
+                                pendaftaran, pairing, input skor, dan leaderboard real-time.
+                            </p>
+                            <div class="project-tech"><strong>Tech:</strong> Next.js, TypeScript, PostgreSQL, Docker</div>
+                        </div>
+                    </article>
+
+                    <!-- P-KNOW -->
+                    <article class="project-card glass-effect">
+                        <div class="project-content">
+                            <span class="project-category">Web & Mobile App</span>
+                            <h3 class="project-title">P-KNOW</h3>
+                            <p class="project-desc">
+                                Aplikasi pembelajaran dan manajemen pengetahuan untuk
+                                lingkungan akademik Politeknik Astra.
+                            </p>
+                            <div class="project-tech"><strong>Tech:</strong> React.js, Spring Boot, Android Studio</div>
+                        </div>
+                    </article>
+
+                    <!-- Student Journey -->
+                    <article class="project-card glass-effect">
+                        <div class="project-content">
+                            <span class="project-category">Web Application</span>
+                            <h3 class="project-title">Student Journey</h3>
+                            <p class="project-desc">
+                                Sistem manajemen aktivitas mahasiswa berbasis RFID dengan
+                                laporan monitoring yang akurat dan informatif.
+                            </p>
+                            <div class="project-tech"><strong>Tech:</strong> Laravel, ASP.NET, RFID</div>
+                        </div>
+                    </article>
+
+                    <!-- Sistem Penilaian Ormawa -->
+                    <article class="project-card glass-effect">
+                        <div class="project-content">
+                            <span class="project-category">Web Application</span>
+                            <h3 class="project-title">Sistem Penilaian Ormawa</h3>
+                            <p class="project-desc">
+                                Sistem evaluasi kinerja organisasi mahasiswa untuk mempermudah
+                                proses penilaian dan pelaporan.
+                            </p>
+                            <div class="project-tech"><strong>Tech:</strong> Laravel, Web-based System</div>
+                        </div>
+                    </article>
+
+                    <!-- Hangman -->
+                    <article class="project-card glass-effect">
+                        <div class="project-content">
+                            <span class="project-category">Desktop Application</span>
+                            <h3 class="project-title">Hangman Game</h3>
+                            <p class="project-desc">
+                                Game tebak kata berbasis Java Swing yang menerapkan lima
+                                struktur data fundamental.
+                            </p>
+                            <div class="project-tech"><strong>Tech:</strong> Java, Java Swing, OOP</div>
+                        </div>
+                    </article>
+
+                    <!-- DevOps -->
+                    <article class="project-card glass-effect">
+                        <div class="project-content">
+                            <span class="project-category">DevOps Project</span>
+                            <h3 class="project-title">CI/CD Azure DevOps</h3>
+                            <p class="project-desc">
+                                Implementasi CI/CD pipeline untuk mempercepat proses
+                                development dan deployment aplikasi.
+                            </p>
+                            <div class="project-tech"><strong>Tech:</strong> Azure DevOps, Docker, Git</div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container" data-reveal>
+                <h2 class="text-center mt-0">Contact</h2>
+                <hr class="divider">
+                
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <p class="mb-4">
+                            Silakan hubungi saya melalui saluran di bawah ini untuk kolaborasi atau pertanyaan terkait pengembangan web.
+                        </p>
+                        <a href="tel:+6281316405890" class="contact-card glass-effect">
+                            <div class="skill-icon"><i class="bi-phone"></i></div>
+                            <div>
+                                <div class="small text-muted">Phone</div>
+                                <div>+62 813-1640-5890</div>
+                            </div>
+                        </a>
+
+                        <a href="mailto:satriomahdi6@gmail.com" class="contact-card glass-effect">
+                            <div class="skill-icon"><i class="bi-envelope"></i></div>
+                            <div>
+                                <div class="small text-muted">Email</div>
+                                <div>satriomahdi6@gmail.com</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="contact-socials">
+                        <a href="https://www.linkedin.com/in/satrio-mahdii-b109a9299/" target="_blank" class="social-item glass-effect linkedin">
+                            <i class="bi-linkedin"></i>
+                            <div class="small">LinkedIn</div>
+                            <div class="fw-bold">Satrio Mahdii</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <span class="footer-brand">Portofolio.</span>
+                    <p class="footer-bio">
+                        Pengembang Web profesional yang berdedikasi menciptakan solusi digital inovatif, performa tinggi, dan pengalaman pengguna yang optimal.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white mb-4">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Skills</a></li>
+                        <li><a href="#portfolio">Project</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white mb-4">Contact Info</h4>
+                    <ul class="footer-links">
+                        <li><i class="bi-envelope me-2"></i> satriomahdi6@gmail.com</li>
+                        <li><i class="bi-phone me-2"></i> +62 813-1640-5890</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="small">
+                    Copyright &copy; 2026 Satrio Mahdii Muhammad. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top">
+        <i class="bi-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
