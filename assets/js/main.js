@@ -181,7 +181,7 @@ function initTypingEffect() {
     const typingElement = document.querySelector('.typing-text');
     if (!typingElement) return;
 
-    const words = ["Web Developer", "Next.js Enthusiast", "Problem Solver"];
+    const words = ["Web Developer", "Programmer", "Problem Solver"];
     let wordIdx = 0;
     let charIdx = 0;
     let isDeleting = false;
