@@ -13,7 +13,7 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&family=DotGothic16&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -21,23 +21,26 @@
             theme: {
                 extend: {
                     colors: {
-                        slatebase: '#07111f',
-                        slatepanel: '#0d1b30',
-                        slateedge: '#16304f',
-                        electric: '#3b82f6',
+                        navybase: '#090d1e',
+                        vividblue: '#0037fc',
+                        offwhite: '#f3f4f6',
+                        slateedge: '#e2e8f0',
                         cyanaccent: '#38bdf8',
-                        softtext: '#8fa8c7'
+                        softtext: '#64748b',
+                        darktext: '#0f172a',
+                        lighttext: '#f8fafc'
                     },
                     fontFamily: {
                         sans: ['Plus Jakarta Sans', 'sans-serif'],
-                        display: ['Space Grotesk', 'sans-serif']
+                        display: ['Space Grotesk', 'sans-serif'],
+                        pixel: ['DotGothic16', 'sans-serif']
                     },
                     boxShadow: {
-                        panel: '0 24px 80px rgba(7, 17, 31, 0.45)',
-                        glow: '0 0 0 1px rgba(59, 130, 246, 0.18), 0 24px 60px rgba(56, 189, 248, 0.08)'
+                        panel: '0 20px 40px -15px rgba(0, 0, 0, 0.05), 0 0 20px rgba(0, 0, 0, 0.02)',
+                        glow: '0 0 0 1px rgba(0, 55, 252, 0.1), 0 24px 60px rgba(0, 55, 252, 0.2)'
                     },
                     backgroundImage: {
-                        grid: 'linear-gradient(rgba(143,168,199,0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(143,168,199,0.08) 1px, transparent 1px)'
+                        grid: 'linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px)'
                     }
                 }
             }
@@ -45,22 +48,22 @@
     </script>
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
-<body class="bg-slatebase text-white selection:bg-electric/30 selection:text-white">
-    <div id="preloader" class="fixed inset-0 z-[100] flex items-center justify-center bg-slatebase">
+<body class="bg-navybase text-lighttext selection:bg-vividblue/30 selection:text-lighttext">
+    <div id="preloader" class="fixed inset-0 z-[100] flex items-center justify-center bg-navybase">
         <div class="text-center">
-            <div class="mx-auto h-16 w-16 rounded-full border-2 border-white/10 border-t-cyanaccent animate-spin"></div>
-            <p class="mt-6 font-display text-2xl tracking-[0.3em] text-white/80">SMM</p>
+            <div class="mx-auto h-16 w-16 rounded-full border-2 border-white/10 border-t-vividblue animate-spin"></div>
+            <p class="mt-6 font-display text-2xl tracking-[0.3em] text-lighttext/80">SMM</p>
         </div>
     </div>
     <div class="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(59,130,246,0.24),_transparent_30%),radial-gradient(circle_at_top_right,_rgba(14,165,233,0.18),_transparent_25%),linear-gradient(180deg,_#07111f_0%,_#091423_40%,_#07111f_100%)]"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(0,55,252,0.15),_transparent_40%),radial-gradient(circle_at_top_right,_rgba(0,55,252,0.1),_transparent_35%)]"></div>
         <div class="absolute inset-0 bg-grid bg-[size:38px_38px] opacity-20"></div>
-        <div class="absolute left-1/2 top-0 h-[28rem] w-[28rem] -translate-x-1/2 rounded-full bg-electric/10 blur-3xl"></div>
+        <div class="absolute left-1/2 top-0 h-[32rem] w-[32rem] -translate-x-1/2 rounded-full bg-vividblue/10 blur-[100px]"></div>
     </div>
-    <div class="fixed left-0 top-0 z-[90] h-1 w-0 bg-gradient-to-r from-cyanaccent via-electric to-white" id="scrollProgress"></div>
+    <div class="fixed left-0 top-0 z-[90] h-1 w-0 bg-vividblue" id="scrollProgress"></div>
     <header class="sticky top-0 z-50 px-4 pt-4">
-        <nav id="navbar" class="mx-auto flex max-w-7xl items-center justify-between rounded-full border border-white/10 bg-[#091423]/80 px-5 py-3 shadow-panel backdrop-blur-xl transition-all duration-300">
-            <a href="#home" class="font-display text-lg font-bold tracking-[0.18em] text-white">SMM</a>
+        <nav id="navbar" class="mx-auto flex max-w-7xl items-center justify-between rounded-full border border-white/10 bg-navybase/60 px-5 py-3 backdrop-blur-xl transition-all duration-300">
+            <a href="#home" class="font-display text-lg font-bold tracking-[0.18em] text-lighttext">SMM</a>
             <div class="hidden items-center gap-3 lg:flex">
                 <div id="navMenu" class="flex items-center gap-2">
                     <a class="nav-link" href="#about" data-i18n="nav_about">Tentang</a>
@@ -81,10 +84,10 @@
                     <button type="button" class="lang-btn active" data-lang-toggle="id">ID</button>
                     <button type="button" class="lang-btn" data-lang-toggle="en">EN</button>
                 </div>
-                <button id="menuButton" class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 text-xl text-white" aria-label="Toggle menu"><i class="bi bi-list"></i></button>
+                <button id="menuButton" class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/20 text-xl text-lighttext" aria-label="Toggle menu"><i class="bi bi-list"></i></button>
             </div>
         </nav>
-        <div id="mobileMenu" class="mx-auto mt-3 hidden max-w-7xl rounded-[2rem] border border-white/10 bg-[#091423]/95 p-4 shadow-panel backdrop-blur-xl lg:hidden">
+        <div id="mobileMenu" class="mx-auto mt-3 hidden max-w-7xl rounded-[2rem] border border-white/10 bg-navybase/95 p-4 backdrop-blur-xl lg:hidden">
             <div class="flex flex-col gap-2">
                 <a class="mobile-link" href="#about" data-i18n="nav_about">Tentang</a>
                 <a class="mobile-link" href="#experience" data-i18n="nav_experience">Pengalaman</a>
@@ -97,44 +100,35 @@
         </div>
     </header>
     <main>
-        <section id="home" class="px-4 pb-16 pt-10 lg:pb-20 lg:pt-14">
+        <section id="home" class="px-4 pb-16 pt-10 lg:pb-32 lg:pt-20">
             <div class="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[1.15fr_0.85fr]">
-                <div class="reveal rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-panel backdrop-blur-xl lg:p-10">
-                    <div class="mb-6 inline-flex items-center gap-3 rounded-full border border-cyanaccent/20 bg-cyanaccent/10 px-4 py-2 text-sm text-cyanaccent" data-i18n="hero_badge"><span class="h-2 w-2 rounded-full bg-cyanaccent"></span>Tersedia untuk peluang Fullstack Developer / Software Engineer</div>
-                    <p class="text-sm font-semibold uppercase tracking-[0.32em] text-softtext" data-i18n="hero_location">Bekasi, Indonesia</p>
-                    <h1 class="mt-4 font-display text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-7xl">Satrio Mahdii Muhammad</h1>
-                    <div class="mt-5 flex flex-wrap items-center gap-3 text-lg text-softtext sm:text-xl">
-                        <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-white" data-i18n="hero_role">Fullstack Developer</span>
-                        <span>|</span>
-                        <span id="stackRotator" class="font-semibold text-cyanaccent">Angular</span>
-                    </div>
-                    <p class="mt-6 max-w-2xl text-base leading-8 text-softtext sm:text-lg" data-i18n="hero_summary">Fullstack Developer dengan pengalaman membangun dan memigrasikan sistem enterprise, khususnya pada lingkungan klaim kesehatan dan teknologi informasi. Kuat pada frontend, backend, integrasi API, dan workflow delivery.</p>
-                    <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-                        <a href="#projects" class="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-electric to-cyanaccent px-6 py-3 font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-glow" data-i18n="cta_projects">Lihat Proyek</a>
-                        <a href="assets/docs/CV_Satrio_Mahdii_Muhammad_Indonesia.pdf" class="inline-flex items-center justify-center rounded-full border border-white/10 bg-white/5 px-6 py-3 font-semibold text-white transition hover:-translate-y-0.5 hover:border-cyanaccent/40 hover:bg-white/10" download data-i18n="cta_cv">Unduh CV</a>
-                        <a href="#contact" class="inline-flex items-center justify-center rounded-full border border-white/10 bg-transparent px-6 py-3 font-semibold text-white transition hover:-translate-y-0.5 hover:border-electric hover:bg-electric/10" data-i18n="cta_contact">Hubungi Saya</a>
-                    </div>
-                    <div class="mt-10 grid gap-4 sm:grid-cols-3">
-                        <div class="rounded-3xl border border-white/10 bg-[#0b1728] p-4"><p class="text-3xl font-bold text-white">2+</p><p class="mt-2 text-sm text-softtext" data-i18n="hero_stat_1">Pengalaman peran dan delivery yang berhadapan dengan sistem enterprise</p></div>
-                        <div class="rounded-3xl border border-white/10 bg-[#0b1728] p-4"><p class="text-3xl font-bold text-white">BFF</p><p class="mt-2 text-sm text-softtext" data-i18n="hero_stat_2">Eksposur arsitektur untuk orkestrasi frontend dan backend</p></div>
-                        <div class="rounded-3xl border border-white/10 bg-[#0b1728] p-4"><p class="text-3xl font-bold text-white">CI/CD</p><p class="mt-2 text-sm text-softtext" data-i18n="hero_stat_3">Workflow delivery menggunakan Azure DevOps dan Docker</p></div>
+                <div class="reveal self-center">
+                    <h1 class="mt-4 font-display text-5xl font-bold leading-tight text-lighttext sm:text-6xl lg:text-7xl">
+                        Satrio Mahdii<br/>
+                        <span id="titleRotator" class="font-pixel italic font-normal text-5xl sm:text-6xl lg:text-8xl opacity-90 inline-block transition-all duration-300">Developer</span>
+                    </h1>
+                    <div class="mt-6 max-w-xl text-base leading-8 text-lighttext/80 sm:text-lg" data-i18n="hero_summary">Fullstack Developer dengan pengalaman membangun dan memigrasikan sistem enterprise, khususnya pada lingkungan klaim kesehatan dan teknologi informasi. Kuat pada frontend, backend, integrasi API, dan workflow delivery.</div>
+                    <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+                        <a href="#projects" class="inline-flex items-center justify-center gap-2 rounded-full bg-vividblue px-8 py-4 font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-glow" data-i18n="cta_projects">Lihat Proyek <i class="bi bi-arrow-right"></i></a>
+                        <a href="#contact" class="inline-flex items-center justify-center rounded-full border border-white/20 bg-transparent px-8 py-4 font-semibold text-lighttext transition hover:-translate-y-0.5 hover:border-lighttext hover:bg-white/5" data-i18n="cta_contact">Hubungi Saya</a>
                     </div>
                 </div>
-                <div class="reveal flex flex-col gap-6">
-                    <div class="overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-br from-[#0f2138] to-[#0a1425] p-6 shadow-panel">
-                        <div class="rounded-[1.5rem] border border-white/10 bg-white/5 p-4">
-                            <div class="mb-5 flex items-center justify-between text-xs uppercase tracking-[0.22em] text-softtext"><span data-i18n="snapshot_label">Ringkasan Profil</span><span data-i18n="snapshot_status">Siap Enterprise</span></div>
-                            <img src="assets/img/myself.png" alt="Portrait of Satrio Mahdii Muhammad" class="mx-auto max-h-[24rem] w-auto object-contain">
-                        </div>
+                <div class="reveal relative flex flex-col justify-center gap-6">
+                    <div class="relative overflow-hidden rounded-[2.5rem] border border-white/10 bg-white/5 p-6 backdrop-blur-md">
+                        <img src="assets/img/myself.png" alt="Portrait" class="mx-auto max-h-[28rem] w-auto object-contain opacity-90 drop-shadow-2xl grayscale transition hover:grayscale-0">
                     </div>
-                    <div class="grid gap-4 sm:grid-cols-2">
-                        <div class="rounded-[1.75rem] border border-white/10 bg-white/5 p-5 shadow-panel"><p class="text-sm uppercase tracking-[0.24em] text-softtext" data-i18n="core_stack_label">Stack Utama</p><p class="mt-3 text-lg font-semibold text-white">Angular, React, Next.js, .NET Web API, SQL Server</p></div>
-                        <div class="rounded-[1.75rem] border border-white/10 bg-white/5 p-5 shadow-panel"><p class="text-sm uppercase tracking-[0.24em] text-softtext" data-i18n="focus_label">Fokus</p><p class="mt-3 text-lg font-semibold text-white" data-i18n="focus_value">Sistem klaim kesehatan, migrasi, REST API, CI/CD</p></div>
+                    <div class="absolute -left-6 bottom-16 rounded-2xl border border-white/10 bg-vividblue p-4 shadow-2xl backdrop-blur-md hidden sm:block">
+                        <p id="stackRotator" class="font-pixel text-xl text-white">.NET / React</p>
+                    </div>
+                    <div class="absolute -right-4 top-16 rounded-2xl border border-white/10 bg-navybase/80 p-4 shadow-2xl backdrop-blur-md hidden sm:block">
+                        <p class="font-pixel text-xl text-cyanaccent">Enterprise</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="about" class="px-4 py-16 lg:py-20">
+        
+        <div class="bg-offwhite text-darktext rounded-t-[3rem] w-full pt-4 pb-10 shadow-[0_-20px_60px_-15px_rgba(0,0,0,0.5)]">
+            <section id="about" class="px-4 py-16 lg:py-20">
             <div class="mx-auto max-w-7xl">
                 <div class="reveal mb-10 max-w-3xl">
                     <p class="section-kicker" data-i18n="about_kicker">Tentang Saya</p>
@@ -142,12 +136,12 @@
                     <p class="section-copy" data-i18n="about_headline">Headline: Fullstack Developer | Angular, React, .NET Web API, SQL Server | BFF Architecture | Ex-AGIT Intern.</p>
                 </div>
                 <div class="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
-                    <article class="reveal rounded-[2rem] border border-white/10 bg-white/5 p-7 shadow-panel">
+                    <article class="reveal rounded-[2rem] border border-slateedge bg-white p-7 shadow-panel">
                         <p class="text-base leading-8 text-softtext" data-i18n="about_p1">Fullstack Developer dengan pengalaman dalam pengembangan dan migrasi sistem enterprise, khususnya pada bidang jaminan kesehatan dan teknologi informasi. Berpengalaman dalam pengembangan frontend dan backend menggunakan Angular, React, .NET Web API, SQL Server, serta implementasi REST API dan arsitektur Backend for Frontend (BFF).</p>
                         <p class="mt-5 text-base leading-8 text-softtext" data-i18n="about_p2">Terlibat dalam pengembangan fitur sistem klaim kesehatan, migrasi aplikasi enterprise, serta implementasi CI/CD pipeline menggunakan Azure DevOps. Fokus kerja saya adalah membangun sistem yang maintainable, terintegrasi, dan siap dipakai dalam lingkungan operasional nyata.</p>
                     </article>
                     <div class="grid gap-6">
-                        <article class="reveal rounded-[2rem] border border-white/10 bg-[#0d1b30] p-6 shadow-panel">
+                        <article class="reveal rounded-[2rem] border border-slateedge bg-white p-6 shadow-panel">
                             <p class="card-label" data-i18n="experience_summary_label">Ringkasan Pengalaman</p>
                             <ul class="mt-4 space-y-3 text-softtext">
                                 <li data-i18n="experience_summary_1">Membangun dan memigrasikan aplikasi enterprise untuk workflow terkait layanan kesehatan.</li>
@@ -155,7 +149,7 @@
                                 <li data-i18n="experience_summary_3">Bekerja dengan sistem berbasis SQL, monitoring, validasi, dan fitur export.</li>
                             </ul>
                         </article>
-                        <article class="reveal rounded-[2rem] border border-white/10 bg-[#0d1b30] p-6 shadow-panel">
+                        <article class="reveal rounded-[2rem] border border-slateedge bg-white p-6 shadow-panel">
                             <p class="card-label" data-i18n="specialization_label">Spesialisasi Teknologi</p>
                             <div class="mt-4 flex flex-wrap gap-3">
                                 <span class="chip" data-i18n="specialization_1">Frontend Enterprise</span>
@@ -182,21 +176,27 @@
                             <div class="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
                                 <div>
                                     <p class="text-sm font-semibold uppercase tracking-[0.22em] text-cyanaccent">BPJS Kesehatan</p>
-                                    <h3 class="mt-2 text-2xl font-bold text-white">Fullstack Developer</h3>
+                                    <h3 class="mt-2 text-2xl font-bold text-darktext">Fullstack Developer</h3>
                                 </div>
-                                <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-softtext" data-i18n="exp1_date">Desember 2025 - Sekarang</span>
+                                <span class="rounded-full border border-slateedge bg-white px-4 py-2 text-sm text-softtext" data-i18n="exp1_date">Desember 2025 - Sekarang</span>
                             </div>
-                            <ul class="mt-6 space-y-3 text-softtext">
-                                <li data-i18n="exp1_1">Mengembangkan REST API, Stored Procedure, dan skrip SQL untuk aplikasi kesehatan enterprise.</li>
-                                <li data-i18n="exp1_2">Membangun dan mengintegrasikan layanan Backend for Frontend (BFF) untuk mendukung aplikasi Angular.</li>
-                                <li data-i18n="exp1_3">Memigrasikan modul ASP.NET MVC legacy ke arsitektur BFF modern.</li>
-                                <li data-i18n="exp1_4">Mendesain query database dan mengoptimalkan performa SQL Server.</li>
-                                <li data-i18n="exp1_5">Berkolaborasi dengan tim frontend dan backend selama migrasi sistem kesehatan skala besar.</li>
-                                <li data-i18n="exp1_6">Berpartisipasi dalam code review, debugging, testing, dan deployment produksi.</li>
-                                <li data-i18n="exp1_7">Mengembangkan komponen Angular yang dinamis dan modul UI yang reusable (Frontend Developer).</li>
-                                <li data-i18n="exp1_8">Mengimplementasikan dependent dropdown, warning validation, penerapan aturan bisnis, dan export Excel.</li>
-                                <li data-i18n="exp1_9">Meningkatkan user experience dengan mencegah operasi yang tidak valid seperti penghapusan SEP tanpa otorisasi.</li>
-                            </ul>
+                            <div class="mt-6">
+                                <h4 class="font-bold text-darktext text-lg mb-3">Fullstack Developer</h4>
+                                <ul class="list-disc list-outside ml-5 space-y-2 text-darktext/80">
+                                    <li data-i18n="exp1_1">Mengembangkan REST API, Stored Procedure, dan skrip SQL untuk aplikasi kesehatan enterprise.</li>
+                                    <li data-i18n="exp1_2">Membangun dan mengintegrasikan layanan Backend for Frontend (BFF) untuk mendukung aplikasi Angular.</li>
+                                    <li data-i18n="exp1_3">Memigrasikan modul ASP.NET MVC legacy ke arsitektur BFF modern.</li>
+                                    <li data-i18n="exp1_4">Mendesain query database dan mengoptimalkan performa SQL Server.</li>
+                                    <li data-i18n="exp1_5">Berkolaborasi dengan tim frontend dan backend selama migrasi sistem kesehatan skala besar.</li>
+                                    <li data-i18n="exp1_6">Berpartisipasi dalam code review, debugging, testing, dan deployment produksi.</li>
+                                </ul>
+                                <h4 class="font-bold text-darktext text-lg mt-6 mb-3">Frontend Developer</h4>
+                                <ul class="list-disc list-outside ml-5 space-y-2 text-darktext/80">
+                                    <li data-i18n="exp1_7">Mengembangkan komponen Angular yang dinamis dan modul UI yang reusable (Frontend Developer).</li>
+                                    <li data-i18n="exp1_8">Mengimplementasikan dependent dropdown, warning validation, penerapan aturan bisnis, dan export Excel.</li>
+                                    <li data-i18n="exp1_9">Meningkatkan user experience dengan mencegah operasi yang tidak valid seperti penghapusan SEP tanpa otorisasi.</li>
+                                </ul>
+                            </div>
                         </div>
                     </article>
                     <article class="reveal timeline-item">
@@ -205,11 +205,11 @@
                             <div class="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
                                 <div>
                                     <p class="text-sm font-semibold uppercase tracking-[0.22em] text-cyanaccent">PT Astra Graphia Information Technology</p>
-                                    <h3 class="mt-2 text-2xl font-bold text-white" data-i18n="exp2_role">Developer Internship</h3>
+                                    <h3 class="mt-2 text-2xl font-bold text-darktext" data-i18n="exp2_role">Developer Internship</h3>
                                 </div>
-                                <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-softtext" data-i18n="exp2_date">Januari 2025 - Juli 2025</span>
+                                <span class="rounded-full border border-slateedge bg-white px-4 py-2 text-sm text-softtext" data-i18n="exp2_date">Januari 2025 - Juli 2025</span>
                             </div>
-                            <ul class="mt-6 space-y-3 text-softtext">
+                            <ul class="list-disc list-outside ml-5 mt-6 space-y-2 text-darktext/80">
                                 <li data-i18n="exp2_1">Mengimplementasikan pipeline CI/CD menggunakan Azure DevOps untuk mempercepat pengembangan dan deployment aplikasi.</li>
                                 <li data-i18n="exp2_2">Mengembangkan Sistem Informasi Manajemen Turnamen Golf untuk PT XYZ, mempercepat proses turnamen hingga 80%.</li>
                             </ul>
@@ -231,9 +231,9 @@
                             <div class="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
                                 <div>
                                     <p class="text-sm font-semibold uppercase tracking-[0.22em] text-cyanaccent" data-i18n="edu1_location">Cikarang</p>
-                                    <h3 class="mt-2 text-2xl font-bold text-white" data-i18n="edu1_title">D3 Manajemen Informatika - Politeknik Astra</h3>
+                                    <h3 class="mt-2 text-2xl font-bold text-darktext" data-i18n="edu1_title">D3 Manajemen Informatika - Politeknik Astra</h3>
                                 </div>
-                                <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-softtext" data-i18n="edu1_date">Sep 2022 – Okt 2025</span>
+                                <span class="rounded-full border border-slateedge bg-white px-4 py-2 text-sm text-softtext" data-i18n="edu1_date">Sep 2022 – Okt 2025</span>
                             </div>
                         </div>
                     </article>
@@ -248,38 +248,38 @@
                 </div>
                 <div class="grid gap-6 xl:grid-cols-3">
                     <article class="reveal project-card">
-                        <div class="project-banner gradient-banner"><div><p class="text-xs uppercase tracking-[0.24em] text-cyanaccent" data-i18n="project1_top">Sistem Enterprise</p><h3 class="mt-3 font-display text-3xl text-white">Vesta</h3></div></div>
+                        <div class="project-banner gradient-banner"><div><p class="text-xs uppercase tracking-[0.24em] text-cyanaccent" data-i18n="project1_top">Sistem Enterprise</p><h3 class="mt-3 font-display text-3xl text-darktext">Vesta</h3></div></div>
                         <div class="project-body">
-                            <div class="flex items-start justify-between gap-4"><div><p class="card-label" data-i18n="project1_label">Sistem Enterprise</p><h3 class="mt-2 text-2xl font-bold text-white">VESTA</h3></div><span class="project-status" data-i18n="internal_label">Internal</span></div>
+                            <div class="flex items-start justify-between gap-4"><div><p class="card-label" data-i18n="project1_label">Sistem Enterprise</p><h3 class="mt-2 text-2xl font-bold text-darktext">VESTA</h3></div><span class="project-status" data-i18n="internal_label">Internal</span></div>
                             <p class="mt-4 text-softtext" data-i18n="project1_desc">Inisiatif aplikasi enterprise yang mendukung workflow operasional terstruktur dengan pendekatan integrasi frontend-backend yang dimodernisasi.</p>
                             <div class="mt-5 flex flex-wrap gap-2"><span class="chip">Angular</span><span class="chip">.NET Web API</span><span class="chip">SQL Server</span><span class="chip">BFF</span></div>
                             <div class="mt-6 space-y-3 text-softtext">
-                                <p data-i18n-html="project1_feature"><strong class="text-white">Sorotan fitur:</strong> form terstruktur, dynamic dropdown, validasi, dan monitoring operasional.</p>
-                                <p data-i18n-html="project1_arch"><strong class="text-white">Arsitektur:</strong> frontend yang mengonsumsi backend service melalui orkestrasi API berorientasi enterprise.</p>
+                                <p data-i18n-html="project1_feature"><strong class="text-darktext">Sorotan fitur:</strong> form terstruktur, dynamic dropdown, validasi, dan monitoring operasional.</p>
+                                <p data-i18n-html="project1_arch"><strong class="text-darktext">Arsitektur:</strong> frontend yang mengonsumsi backend service melalui orkestrasi API berorientasi enterprise.</p>
                             </div>
                         </div>
                     </article>
                     <article class="reveal project-card">
-                        <div class="project-banner gradient-banner"><div><p class="text-xs uppercase tracking-[0.24em] text-cyanaccent" data-i18n="project2_top">Klaim Kesehatan</p><h3 class="mt-3 font-display text-3xl text-white">VClaim</h3></div></div>
+                        <div class="project-banner gradient-banner"><div><p class="text-xs uppercase tracking-[0.24em] text-cyanaccent" data-i18n="project2_top">Klaim Kesehatan</p><h3 class="mt-3 font-display text-3xl text-darktext">VClaim</h3></div></div>
                         <div class="project-body">
-                            <div class="flex items-start justify-between gap-4"><div><p class="card-label" data-i18n="project2_label">Platform Kesehatan</p><h3 class="mt-2 text-2xl font-bold text-white">VClaim</h3></div><span class="project-status" data-i18n="internal_label">Internal</span></div>
+                            <div class="flex items-start justify-between gap-4"><div><p class="card-label" data-i18n="project2_label">Platform Kesehatan</p><h3 class="mt-2 text-2xl font-bold text-darktext">VClaim</h3></div><span class="project-status" data-i18n="internal_label">Internal</span></div>
                             <p class="mt-4 text-softtext" data-i18n="project2_desc">Modul enterprise terkait klaim yang fokus pada pemrosesan data, integrasi API, dan komunikasi backend yang maintainable untuk workflow kesehatan.</p>
                             <div class="mt-5 flex flex-wrap gap-2"><span class="chip">Angular</span><span class="chip">REST API</span><span class="chip">SQL Server</span><span class="chip">Excel Export</span></div>
                             <div class="mt-6 space-y-3 text-softtext">
-                                <p data-i18n-html="project2_feature"><strong class="text-white">Sorotan fitur:</strong> warning validation, export data, form siap integrasi, dan workflow monitoring.</p>
-                                <p data-i18n-html="project2_arch"><strong class="text-white">Arsitektur:</strong> frontend modular yang ditopang API service untuk proses klaim enterprise.</p>
+                                <p data-i18n-html="project2_feature"><strong class="text-darktext">Sorotan fitur:</strong> warning validation, export data, form siap integrasi, dan workflow monitoring.</p>
+                                <p data-i18n-html="project2_arch"><strong class="text-darktext">Arsitektur:</strong> frontend modular yang ditopang API service untuk proses klaim enterprise.</p>
                             </div>
                         </div>
                     </article>
                     <article class="reveal project-card">
-                        <div class="project-banner gradient-banner-alt"><div><p class="text-xs uppercase tracking-[0.24em] text-cyanaccent" data-i18n="project3_top">Manajemen Turnamen</p><h3 class="mt-3 font-display text-3xl text-white">Halo Golf Club</h3></div></div>
+                        <div class="project-banner gradient-banner-alt"><div><p class="text-xs uppercase tracking-[0.24em] text-cyanaccent" data-i18n="project3_top">Manajemen Turnamen</p><h3 class="mt-3 font-display text-3xl text-darktext">Halo Golf Club</h3></div></div>
                         <div class="project-body">
-                            <div class="flex items-start justify-between gap-4"><div><p class="card-label" data-i18n="project3_label">Aplikasi Web</p><h3 class="mt-2 text-2xl font-bold text-white">Halo Golf Club</h3></div><a href="https://my-portofolio-satrio-mahdii.vercel.app/" target="_blank" rel="noreferrer" class="project-link" data-i18n="demo_label">Demo</a></div>
+                            <div class="flex items-start justify-between gap-4"><div><p class="card-label" data-i18n="project3_label">Aplikasi Web</p><h3 class="mt-2 text-2xl font-bold text-darktext">Halo Golf Club</h3></div><a href="https://my-portofolio-satrio-mahdii.vercel.app/" target="_blank" rel="noreferrer" class="project-link" data-i18n="demo_label">Demo</a></div>
                             <p class="mt-4 text-softtext" data-i18n="project3_desc">Sistem manajemen turnamen golf berbasis web untuk digitalisasi registrasi, pairing, scoring, dan leaderboard secara real-time.</p>
                             <div class="mt-5 flex flex-wrap gap-2"><span class="chip">Next.js</span><span class="chip">TypeScript</span><span class="chip">PostgreSQL</span><span class="chip">Docker</span></div>
                             <div class="mt-6 space-y-3 text-softtext">
-                                <p data-i18n-html="project3_feature"><strong class="text-white">Sorotan fitur:</strong> manajemen registrasi, pairing flow, input score, dan live leaderboard.</p>
-                                <p data-i18n-html="project3_arch"><strong class="text-white">Arsitektur:</strong> aplikasi web modern berbasis PostgreSQL dengan workflow development yang tercontainerisasi.</p>
+                                <p data-i18n-html="project3_feature"><strong class="text-darktext">Sorotan fitur:</strong> manajemen registrasi, pairing flow, input score, dan live leaderboard.</p>
+                                <p data-i18n-html="project3_arch"><strong class="text-darktext">Arsitektur:</strong> aplikasi web modern berbasis PostgreSQL dengan workflow development yang tercontainerisasi.</p>
                             </div>
                         </div>
                     </article>
@@ -293,10 +293,38 @@
                     <h2 class="section-title" data-i18n="skills_title">Cakupan stack di frontend, backend, database, dan tooling delivery</h2>
                 </div>
                 <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-                    <article class="reveal skill-card"><p class="card-label" data-i18n="skills_frontend">Frontend</p><h3 class="mt-3 text-xl font-bold text-white" data-i18n="skills_frontend_desc">UI dan application layer</h3><div class="mt-5 flex flex-wrap gap-2"><span class="chip">Angular</span><span class="chip">React</span><span class="chip">Next.js</span></div></article>
-                    <article class="reveal skill-card"><p class="card-label" data-i18n="skills_backend">Backend</p><h3 class="mt-3 text-xl font-bold text-white" data-i18n="skills_backend_desc">Desain API dan service</h3><div class="mt-5 flex flex-wrap gap-2"><span class="chip">.NET Web API</span><span class="chip">REST API</span><span class="chip">BFF Architecture</span><span class="chip">Spring Boot</span></div></article>
-                    <article class="reveal skill-card"><p class="card-label" data-i18n="skills_database">Database</p><h3 class="mt-3 text-xl font-bold text-white" data-i18n="skills_database_desc">Sistem data terstruktur</h3><div class="mt-5 flex flex-wrap gap-2"><span class="chip">SQL Server</span><span class="chip">Oracle</span><span class="chip">PostgreSQL</span></div></article>
-                    <article class="reveal skill-card"><p class="card-label" data-i18n="skills_tools">DevOps dan Tools</p><h3 class="mt-3 text-xl font-bold text-white" data-i18n="skills_tools_desc">Delivery dan kolaborasi</h3><div class="mt-5 flex flex-wrap gap-2"><span class="chip">Docker</span><span class="chip">Azure DevOps</span><span class="chip">Git</span><span class="chip">C#</span><span class="chip">JavaScript</span></div></article>
+                    <article class="reveal skill-card">
+                        <h3 class="text-xl font-bold text-darktext mb-4" data-i18n="skills_cat1">Bahasa Pemrograman</h3>
+                        <div class="flex flex-wrap gap-2"><span class="chip">JavaScript</span><span class="chip">TypeScript</span><span class="chip">C#</span><span class="chip">Java</span><span class="chip">SQL</span></div>
+                    </article>
+                    <article class="reveal skill-card">
+                        <h3 class="text-xl font-bold text-darktext mb-4" data-i18n="skills_cat2">Frontend & Framework</h3>
+                        <div class="flex flex-wrap gap-2"><span class="chip">Angular</span><span class="chip">React</span><span class="chip">Next.js</span><span class="chip">Laravel</span><span class="chip">Spring Boot</span><span class="chip">Bootstrap</span><span class="chip">Tailwind CSS</span></div>
+                    </article>
+                    <article class="reveal skill-card">
+                        <h3 class="text-xl font-bold text-darktext mb-4" data-i18n="skills_cat3">Backend & API</h3>
+                        <div class="flex flex-wrap gap-2"><span class="chip">.NET Web API</span><span class="chip">ASP.NET MVC</span><span class="chip">REST API</span><span class="chip">BFF</span></div>
+                    </article>
+                    <article class="reveal skill-card">
+                        <h3 class="text-xl font-bold text-darktext mb-4" data-i18n="skills_cat4">Database</h3>
+                        <div class="flex flex-wrap gap-2"><span class="chip">SQL Server</span><span class="chip">Oracle</span><span class="chip">PostgreSQL</span><span class="chip">MySQL</span></div>
+                    </article>
+                    <article class="reveal skill-card">
+                        <h3 class="text-xl font-bold text-darktext mb-4" data-i18n="skills_cat5">DevOps</h3>
+                        <div class="flex flex-wrap gap-2"><span class="chip">Git</span><span class="chip">Azure DevOps</span><span class="chip">Docker</span><span class="chip">phpMyAdmin</span><span class="chip">GitLab</span><span class="chip">Bitbucket</span></div>
+                    </article>
+                    <article class="reveal skill-card">
+                        <h3 class="text-xl font-bold text-darktext mb-4" data-i18n="skills_cat6">Tools</h3>
+                        <div class="flex flex-wrap gap-2"><span class="chip">Trello</span><span class="chip">Visual Studio</span><span class="chip">VS Code</span><span class="chip">Postman</span><span class="chip">SSMS</span><span class="chip">Android Studio</span></div>
+                    </article>
+                    <article class="reveal skill-card">
+                        <h3 class="text-xl font-bold text-darktext mb-4" data-i18n="skills_cat7">Soft Skills</h3>
+                        <div class="flex flex-wrap gap-2"><span class="chip">Problem Solving</span><span class="chip">Teamwork</span><span class="chip">Adaptability</span><span class="chip">Time Management</span></div>
+                    </article>
+                    <article class="reveal skill-card">
+                        <h3 class="text-xl font-bold text-darktext mb-4" data-i18n="skills_cat8">Bahasa</h3>
+                        <div class="flex flex-wrap gap-2"><span class="chip" data-i18n="skills_lang1">Indonesia (Native)</span><span class="chip" data-i18n="skills_lang2">Inggris (Professional)</span><span class="chip" data-i18n="skills_lang3">Jepang (N4)</span></div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -306,47 +334,48 @@
                     <p class="section-kicker" data-i18n="cert_kicker">Sertifikasi</p>
                     <h2 class="section-title" data-i18n="cert_title">Kredensial yang mendukung</h2>
                 </div>
-                <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-5">
-                    <article class="reveal cert-card">Postman API Beginner</article>
-                    <article class="reveal cert-card">SQL (Intermediate) HackerRank</article>
-                    <article class="reveal cert-card">Javascript Intermediate Sololearn</article>
-                    <article class="reveal cert-card">SQL (Basic) HackerRank</article>
-                    <article class="reveal cert-card">Web Development Sololearn</article>
-                    <article class="reveal cert-card">356 Fundamentals Microsoft</article>
-                    <article class="reveal cert-card">MikroTik Certified Network Associate</article>
-                    <article class="reveal cert-card">C# (Basic) HackerRank</article>
-                    <article class="reveal cert-card">Problem Solving (Basic) HackerRank</article>
+                <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+                    <a href="https://badges.parchment.com/public/assertions/CGgjRl3ISkWigAEYnTZZxQ?utm_source=url_copy" target="_blank" rel="noreferrer" class="reveal cert-card hover:cursor-pointer">Postman API Beginner<br><span class="text-xs font-normal text-softtext mt-1">Postman (Mei 2026)</span></a>
+                    <a href="https://www.hackerrank.com/certificates/iframe/23a7af326e31" target="_blank" rel="noreferrer" class="reveal cert-card hover:cursor-pointer">SQL (Intermediate)<br><span class="text-xs font-normal text-softtext mt-1">HackerRank (Mei 2026)</span></a>
+                    <a href="https://www.sololearn.com/certificates/CC-RTQDGPTX" target="_blank" rel="noreferrer" class="reveal cert-card hover:cursor-pointer">Javascript Intermediate<br><span class="text-xs font-normal text-softtext mt-1">Sololearn (Mei 2026)</span></a>
+                    <a href="https://www.hackerrank.com/certificates/iframe/83010e6ac3fd" target="_blank" rel="noreferrer" class="reveal cert-card hover:cursor-pointer">SQL (Basic)<br><span class="text-xs font-normal text-softtext mt-1">HackerRank (Mar 2026)</span></a>
+                    <a href="https://www.sololearn.com/certificates/CC-HMSRZDGD" target="_blank" rel="noreferrer" class="reveal cert-card hover:cursor-pointer">Web Development<br><span class="text-xs font-normal text-softtext mt-1">Sololearn (Mar 2026)</span></a>
+                    <a href="https://drive.google.com/file/d/1hiKxTBTSkDqGC8Ev5VjRHte9JVM2HdhN/view?usp=sharing" target="_blank" rel="noreferrer" class="reveal cert-card hover:cursor-pointer">Microsoft 356 Fundamentals<br><span class="text-xs font-normal text-softtext mt-1">Microsoft (Juli 2025)</span></a>
+                    <a href="https://drive.google.com/file/d/1vzL6nK1ZpmecY6IV9lKpDqIcR6mmL_10/view?usp=sharing" target="_blank" rel="noreferrer" class="reveal cert-card hover:cursor-pointer">MikroTik Certified Network Associate<br><span class="text-xs font-normal text-softtext mt-1">MikroTik (Juli 2025)</span></a>
+                    <a href="https://www.hackerrank.com/certificates/iframe/8ca6d2d12183" target="_blank" rel="noreferrer" class="reveal cert-card hover:cursor-pointer">C# (Basic)<br><span class="text-xs font-normal text-softtext mt-1">HackerRank (Jan 2025)</span></a>
+                    <a href="https://www.hackerrank.com/certificates/iframe/aea45523fe9c" target="_blank" rel="noreferrer" class="reveal cert-card hover:cursor-pointer">Problem Solving (Basic)<br><span class="text-xs font-normal text-softtext mt-1">HackerRank (Jan 2025)</span></a>
                 </div>
             </div>
         </section>
         <section id="contact" class="px-4 py-16 lg:py-20">
             <div class="mx-auto grid max-w-7xl gap-6 lg:grid-cols-[0.9fr_1.1fr]">
-                <div class="reveal rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-panel">
+                <div class="reveal rounded-[2rem] border border-slateedge bg-white p-8 shadow-panel">
                     <p class="section-kicker" data-i18n="contact_kicker">Kontak</p>
                     <h2 class="section-title !text-3xl" data-i18n="contact_title">Terbuka untuk peluang engineering enterprise dan full stack</h2>
                     <p class="mt-4 text-softtext" data-i18n="contact_desc">Silakan hubungi saya untuk proses screening recruiter, review portfolio, atau kolaborasi terkait pengembangan web enterprise, modernisasi sistem, dan aplikasi berbasis API.</p>
                     <div class="mt-8 space-y-4 text-softtext">
-                        <p data-i18n-html="contact_email"><span class="font-semibold text-white">Email:</span> <a href="mailto:satriomahdi6@gmail.com" class="transition hover:text-cyanaccent">satriomahdi6@gmail.com</a></p>
-                        <p data-i18n-html="contact_phone"><span class="font-semibold text-white">Telepon / WhatsApp:</span> <a href="https://wa.me/6281316405890" target="_blank" rel="noreferrer" class="transition hover:text-cyanaccent">+62 813-1640-5890</a></p>
-                        <p data-i18n-html="contact_location"><span class="font-semibold text-white">Lokasi:</span> Bekasi, Indonesia</p>
+                        <p data-i18n-html="contact_email"><span class="font-semibold text-darktext">Email:</span> <a href="mailto:satriomahdi6@gmail.com" class="transition hover:text-cyanaccent">satriomahdi6@gmail.com</a></p>
+                        <p data-i18n-html="contact_phone"><span class="font-semibold text-darktext">Telepon / WhatsApp:</span> <a href="https://wa.me/6281316405890" target="_blank" rel="noreferrer" class="transition hover:text-cyanaccent">+62 813-1640-5890</a></p>
+                        <p data-i18n-html="contact_location"><span class="font-semibold text-darktext">Lokasi:</span> Bekasi, Indonesia</p>
                     </div>
                 </div>
                 <div class="grid gap-4 sm:grid-cols-2">
-                    <a href="https://www.linkedin.com/in/satrio-mahdii-b109a9299/" target="_blank" rel="noreferrer" class="reveal contact-card"><i class="bi bi-linkedin text-3xl text-cyanaccent"></i><div><p class="card-label">LinkedIn</p><p class="mt-2 text-lg font-semibold text-white">Satrio Mahdii Muhammad</p></div></a>
-                    <a href="https://github.com/ooirtas" target="_blank" rel="noreferrer" class="reveal contact-card"><i class="bi bi-github text-3xl text-cyanaccent"></i><div><p class="card-label">GitHub</p><p class="mt-2 text-lg font-semibold text-white">github.com/ooirtas</p></div></a>
-                    <a href="mailto:satriomahdi6@gmail.com" class="reveal contact-card"><i class="bi bi-envelope text-3xl text-cyanaccent"></i><div><p class="card-label">Email</p><p class="mt-2 text-lg font-semibold text-white">satriomahdi6@gmail.com</p></div></a>
-                    <a href="https://wa.me/6281316405890" target="_blank" rel="noreferrer" class="reveal contact-card"><i class="bi bi-whatsapp text-3xl text-cyanaccent"></i><div><p class="card-label">WhatsApp</p><p class="mt-2 text-lg font-semibold text-white" data-i18n="contact_chat">Chat langsung</p></div></a>
+                    <a href="https://www.linkedin.com/in/satrio-mahdii-b109a9299/" target="_blank" rel="noreferrer" class="reveal contact-card"><i class="bi bi-linkedin text-3xl text-cyanaccent"></i><div><p class="card-label">LinkedIn</p><p class="mt-2 text-lg font-semibold text-darktext">Satrio Mahdii Muhammad</p></div></a>
+                    <a href="https://github.com/ooirtas" target="_blank" rel="noreferrer" class="reveal contact-card"><i class="bi bi-github text-3xl text-cyanaccent"></i><div><p class="card-label">GitHub</p><p class="mt-2 text-lg font-semibold text-darktext">github.com/ooirtas</p></div></a>
+                    <a href="mailto:satriomahdi6@gmail.com" class="reveal contact-card"><i class="bi bi-envelope text-3xl text-cyanaccent"></i><div><p class="card-label">Email</p><p class="mt-2 text-lg font-semibold text-darktext">satriomahdi6@gmail.com</p></div></a>
+                    <a href="https://wa.me/6281316405890" target="_blank" rel="noreferrer" class="reveal contact-card"><i class="bi bi-whatsapp text-3xl text-cyanaccent"></i><div><p class="card-label">WhatsApp</p><p class="mt-2 text-lg font-semibold text-darktext" data-i18n="contact_chat">Chat langsung</p></div></a>
                 </div>
             </div>
         </section>
+        </div>
     </main>
-    <footer class="px-4 pb-10 pt-6">
-        <div class="mx-auto flex max-w-7xl flex-col gap-4 rounded-[2rem] border border-white/10 bg-[#081220] px-6 py-6 text-sm text-softtext shadow-panel md:flex-row md:items-center md:justify-between">
+    <footer class="bg-navybase text-lighttext px-4 pb-10 pt-10">
+        <div class="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-6 text-sm text-lighttext/70 md:flex-row md:items-center md:justify-between border-t border-white/10">
             <div><p class="font-display text-lg font-bold tracking-[0.18em] text-white">SMM</p><p class="mt-2" data-i18n="footer_desc">Enterprise Fullstack Developer dengan pengalaman modern web dan delivery API.</p></div>
             <p data-i18n-html="footer_copy">&copy; <span id="currentYear"></span> Satrio Mahdii Muhammad. Dibuat untuk review recruiter dan kredibilitas teknis.</p>
         </div>
     </footer>
-    <a href="#home" id="backToTop" class="fixed bottom-6 right-6 z-40 hidden h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-[#0d1b30]/90 text-xl text-white shadow-panel backdrop-blur-xl transition hover:-translate-y-0.5 hover:border-cyanaccent/40 hover:text-cyanaccent"><i class="bi bi-arrow-up"></i></a>
+    <a href="#home" id="backToTop" class="fixed bottom-6 right-6 z-40 hidden h-12 w-12 items-center justify-center rounded-full bg-vividblue text-xl text-white shadow-2xl transition hover:-translate-y-1 hover:shadow-glow"><i class="bi bi-arrow-up"></i></a>
     <script src="assets/js/main.js"></script>
 </body>
 </html>

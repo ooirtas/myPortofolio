@@ -9,7 +9,7 @@ body {
 .nav-link,
 .mobile-link {
     border-radius: 9999px;
-    color: #8fa8c7;
+    color: #cbd5e1;
     display: inline-flex;
     font-size: 0.95rem;
     font-weight: 600;
@@ -22,14 +22,14 @@ body {
 .nav-link.active,
 .mobile-link:hover,
 .mobile-link.active {
-    background: rgba(255, 255, 255, 0.06);
+    background: rgba(255, 255, 255, 0.1);
     color: #ffffff;
 }
 
 .lang-switcher {
     align-items: center;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
     border-radius: 9999px;
     display: inline-flex;
     gap: 0.25rem;
@@ -40,7 +40,7 @@ body {
     background: transparent;
     border: 0;
     border-radius: 9999px;
-    color: #8fa8c7;
+    color: #cbd5e1;
     cursor: pointer;
     font-size: 0.8rem;
     font-weight: 700;
@@ -50,12 +50,12 @@ body {
 }
 
 .lang-btn.active {
-    background: linear-gradient(135deg, rgba(59, 130, 246, 0.28), rgba(56, 189, 248, 0.2));
+    background: #0037fc;
     color: #ffffff;
 }
 
 .section-kicker {
-    color: #38bdf8;
+    color: #0037fc;
     font-size: 0.85rem;
     font-weight: 700;
     letter-spacing: 0.28em;
@@ -63,7 +63,7 @@ body {
 }
 
 .section-title {
-    color: #ffffff;
+    color: #090d1e;
     font-family: 'Space Grotesk', sans-serif;
     font-size: clamp(2rem, 3vw, 3.5rem);
     font-weight: 700;
@@ -72,14 +72,14 @@ body {
 }
 
 .section-copy {
-    color: #8fa8c7;
+    color: #64748b;
     font-size: 1.05rem;
     line-height: 1.9;
     margin-top: 1.25rem;
 }
 
 .card-label {
-    color: #8fa8c7;
+    color: #64748b;
     font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 0.22em;
@@ -87,10 +87,10 @@ body {
 }
 
 .chip {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
     border-radius: 9999px;
-    color: #d9e8fb;
+    color: #334155;
     display: inline-flex;
     font-size: 0.9rem;
     font-weight: 600;
@@ -99,7 +99,7 @@ body {
 }
 
 .chip:hover {
-    border-color: rgba(56, 189, 248, 0.35);
+    border-color: rgba(0, 55, 252, 0.4);
     transform: translateY(-1px);
 }
 
@@ -109,7 +109,7 @@ body {
 }
 
 .timeline::before {
-    background: linear-gradient(180deg, rgba(56, 189, 248, 0.4), rgba(59, 130, 246, 0.05));
+    background: linear-gradient(180deg, rgba(0, 55, 252, 0.3), rgba(0, 55, 252, 0.1));
     content: '';
     left: 0.9rem;
     position: absolute;
@@ -128,10 +128,10 @@ body {
 }
 
 .timeline-dot {
-    background: linear-gradient(135deg, #38bdf8, #3b82f6);
-    border: 6px solid rgba(8, 18, 32, 1);
+    background: #0037fc;
+    border: 6px solid #f3f4f6;
     border-radius: 9999px;
-    box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.18);
+    box-shadow: 0 0 0 1px rgba(0, 55, 252, 0.3);
     height: 1.25rem;
     left: 0.35rem;
     position: absolute;
@@ -144,10 +144,10 @@ body {
 .skill-card,
 .cert-card,
 .contact-card {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
     border-radius: 2rem;
-    box-shadow: 0 24px 80px rgba(7, 17, 31, 0.45);
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.05), 0 0 20px rgba(0, 0, 0, 0.02);
     transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -163,8 +163,8 @@ body {
 .cert-card:hover,
 .contact-card:hover,
 .timeline-card:hover {
-    border-color: rgba(56, 189, 248, 0.35);
-    box-shadow: 0 0 0 1px rgba(59, 130, 246, 0.18), 0 24px 60px rgba(56, 189, 248, 0.08);
+    border-color: rgba(0, 55, 252, 0.4);
+    box-shadow: 0 0 0 1px rgba(0, 55, 252, 0.18), 0 24px 60px rgba(0, 55, 252, 0.15);
     transform: translateY(-4px);
 }
 
@@ -173,14 +173,15 @@ body {
     display: flex;
     height: 15rem;
     justify-content: center;
+    border-radius: 2rem 2rem 0 0;
 }
 
 .gradient-banner {
-    background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.25), transparent 30%), linear-gradient(135deg, #0f2138 0%, #0a1425 100%);
+    background: radial-gradient(circle at top left, rgba(0, 55, 252, 0.15), transparent 30%), linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
 }
 
 .gradient-banner-alt {
-    background: radial-gradient(circle at top right, rgba(59, 130, 246, 0.2), transparent 28%), linear-gradient(135deg, #0b1728 0%, #112644 100%);
+    background: radial-gradient(circle at top right, rgba(0, 55, 252, 0.15), transparent 28%), linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
 }
 
 .project-body {
@@ -190,10 +191,10 @@ body {
 .project-status,
 .project-link {
     align-items: center;
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(15, 23, 42, 0.04);
+    border: 1px solid #e2e8f0;
     border-radius: 9999px;
-    color: #d9e8fb;
+    color: #334155;
     display: inline-flex;
     font-size: 0.85rem;
     font-weight: 600;
@@ -203,14 +204,15 @@ body {
 }
 
 .project-link:hover {
-    border-color: rgba(56, 189, 248, 0.35);
-    color: #38bdf8;
+    border-color: rgba(0, 55, 252, 0.4);
+    color: #0037fc;
 }
 
 .cert-card {
     align-items: center;
-    color: #ffffff;
+    color: #0f172a;
     display: flex;
+    flex-direction: column;
     font-weight: 600;
     justify-content: center;
     min-height: 8rem;

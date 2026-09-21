@@ -11,7 +11,7 @@ const translations = {
         "hero_badge": "<span class=\"h-2 w-2 rounded-full bg-cyanaccent\"></span>Tersedia untuk peluang Fullstack Developer / Software Engineer",
         "hero_location": "Bekasi, 17155",
         "hero_role": "Fullstack Developer",
-        "hero_summary": "Fullstack Developer dengan pengalaman 2+ tahun dalam pengembangan aplikasi enterprise, berfokus pada sistem kesehatan dan teknologi informasi, pengembangan REST API, Backend for Frontend (BFF), dan migrasi sistem.",
+        "hero_summary": "Fullstack Developer dengan pengalaman dalam pengembangan aplikasi enterprise, khususnya pada sistem layanan kesehatan dan teknologi informasi. Berpengalaman dalam pengembangan REST API, BFF, migrasi sistem, integrasi frontend-backend, serta pengembangan aplikasi menggunakan Angular, .NET Web API, SQL Server, dan Azure DevOps.",
         "cta_projects": "Lihat Proyek",
         "cta_cv": "Unduh CV",
         "cta_contact": "Hubungi Saya",
@@ -53,7 +53,7 @@ const translations = {
         "exp1_8": "Mengimplementasikan dependent dropdown, warning validation, penerapan aturan bisnis, dan export Excel.",
         "exp1_9": "Meningkatkan user experience dengan mencegah operasi yang tidak valid seperti penghapusan SEP tanpa otorisasi.",
         "exp2_title": "PT Astra Graphia Information Technology \u2013 Tangerang",
-        "exp2_role": "Magang Developer",
+        "exp2_role": "Developer Intern",
         "exp2_date": "Jan 2025 \u2013 Jul 2025",
         "exp2_1": "Mengimplementasikan pipeline CI/CD menggunakan Azure DevOps untuk mempercepat pengembangan dan deployment aplikasi.",
         "exp2_2": "Mengembangkan Sistem Informasi Manajemen Turnamen Golf untuk PT XYZ, mempercepat proses turnamen hingga 80%.",
@@ -66,39 +66,42 @@ const translations = {
         "projects_title": "Pilihan Proyek",
         "project1_label": "Sistem Klaim Kesehatan",
         "internal_label": "Internal",
-        "project1_desc": "Memigrasikan sistem klaim kesehatan dari platform legacy ke arsitektur VESTA.",
-        "project1_feature": "<strong class=\"text-white\">Sorotan fitur:</strong> validasi frontend, dashboard monitoring, dan integrasi backend.",
-        "project1_arch": "<strong class=\"text-white\">Arsitektur:</strong> Mengembangkan REST API, Stored Procedure, modul Angular, dan layanan BFF.",
+        "project1_desc": "Migrasi sistem Vedika ke platform VESTA dengan implementasi backend API, frontend Angular, dan integrasi menggunakan arsitektur BFF.",
+        "project1_feature": "<strong class=\"text-darktext\">Sorotan fitur:</strong> Mengembangkan REST API (.NET Web API) dan frontend Angular.",
+        "project1_arch": "<strong class=\"text-darktext\">Arsitektur:</strong> Stored Procedure SQL Server, integrasi frontend-backend via BFF.",
         "project1_top": "Migrasi Sistem",
-        "project2_top": "Asuransi Kesehatan",
-        "project2_label": "Validasi Klaim",
-        "project2_desc": "Mengembangkan fitur validasi klaim asuransi kesehatan.",
-        "project2_feature": "<strong class=\"text-white\">Sorotan fitur:</strong> Mengimplementasikan Status Kecelakaan, Peringatan SEP, Monitoring KKPAK, dan Perlindungan Penghapusan.",
-        "project2_arch": "<strong class=\"text-white\">Arsitektur:</strong> Mengintegrasikan frontend dengan REST API dan backend SQL Server.",
+        "project2_top": "Validasi Klaim",
+        "project2_label": "VClaim",
+        "project2_desc": "Pengembangan sistem validasi klaim kesehatan dan integrasi frontend-backend.",
+        "project2_feature": "<strong class=\"text-darktext\">Sorotan fitur:</strong> Validasi SEP, Dynamic Dropdown Status Kecelakaan, Monitoring KKPAK, dan pembatasan penghapusan SEP.",
+        "project2_arch": "<strong class=\"text-darktext\">Arsitektur:</strong> Integrasi frontend dengan REST API dan backend SQL Server.",
         "project3_top": "Manajemen Turnamen",
-        "project3_label": "Aplikasi Web",
+        "project3_label": "Halo Golf Club",
         "demo_label": "Demo",
-        "project3_desc": "Mengembangkan aplikasi web fullstack menggunakan Next.js, PostgreSQL, Docker, Prisma ORM.",
-        "project3_feature": "<strong class=\"text-white\">Sorotan fitur:</strong> Membangun pendaftaran turnamen, pembuatan pairing, live scoring, leaderboard, dan modul scorecard.",
-        "project3_arch": "<strong class=\"text-white\">Arsitektur:</strong> Mendesain UI responsif dan mengoptimalkan performa database.",
+        "project3_desc": "Sistem Informasi Manajemen Turnamen Golf berbasis web untuk registrasi dan live scoring.",
+        "project3_feature": "<strong class=\"text-darktext\">Sorotan fitur:</strong> Sistem registrasi peserta, modul pairing, input scorecard, dan leaderboard real-time.",
+        "project3_arch": "<strong class=\"text-darktext\">Arsitektur:</strong> Next.js, PostgreSQL, Docker, Prisma ORM.",
         "skills_kicker": "Keahlian",
         "skills_title": "Keahlian Teknis",
-        "skills_frontend": "Frontend & Frameworks",
-        "skills_frontend_desc": "Angular, React, Next.js, Laravel, Spring Boot, Bootstrap, Tailwind CSS",
-        "skills_backend": "Backend & API",
-        "skills_backend_desc": ".NET Web API, ASP.NET MVC, REST API, Backend for Frontend (BFF)",
-        "skills_database": "Database",
-        "skills_database_desc": "SQL Server, Oracle, PostgreSQL, MySQL",
-        "skills_tools": "DevOps & Tools",
-        "skills_tools_desc": "Git, Azure DevOps, Docker, phpMyAdmin, GitLab, Bitbucket, Trello, Visual Studio, VS Code, Postman, SSMS, Android Studio",
+        "skills_cat1": "Bahasa Pemrograman",
+        "skills_cat2": "Frontend & Framework",
+        "skills_cat3": "Backend & API",
+        "skills_cat4": "Database",
+        "skills_cat5": "DevOps",
+        "skills_cat6": "Tools",
+        "skills_cat7": "Soft Skills",
+        "skills_cat8": "Bahasa",
+        "skills_lang1": "Indonesia (Native)",
+        "skills_lang2": "Inggris (Professional)",
+        "skills_lang3": "Jepang (N4)",
         "cert_kicker": "Pelatihan",
         "cert_title": "Pelatihan dan Sertifikasi",
         "contact_kicker": "Kontak",
         "contact_title": "Terbuka untuk Peluang",
         "contact_desc": "Silakan hubungi saya untuk pengembangan web enterprise, modernisasi sistem, dan aplikasi berbasis API.",
-        "contact_email": "<span class=\"font-semibold text-white\">Email:</span> <a href=\"mailto:satriomahdi6@gmail.com\" class=\"transition hover:text-cyanaccent\">satriomahdi6@gmail.com</a>",
-        "contact_phone": "<span class=\"font-semibold text-white\">Telepon:</span> <a href=\"https://wa.me/6281316405890\" target=\"_blank\" rel=\"noreferrer\" class=\"transition hover:text-cyanaccent\">081316405890</a>",
-        "contact_location": "<span class=\"font-semibold text-white\">Lokasi:</span> Bekasi, 17155",
+        "contact_email": "<span class=\"font-semibold text-darktext\">Email:</span> <a href=\"mailto:satriomahdi6@gmail.com\" class=\"transition hover:text-cyanaccent\">satriomahdi6@gmail.com</a>",
+        "contact_phone": "<span class=\"font-semibold text-darktext\">Telepon:</span> <a href=\"https://wa.me/6281316405890\" target=\"_blank\" rel=\"noreferrer\" class=\"transition hover:text-cyanaccent\">081316405890</a>",
+        "contact_location": "<span class=\"font-semibold text-darktext\">Lokasi:</span> Bekasi, 17155",
         "contact_chat": "Chat langsung",
         "footer_desc": "Fullstack Developer berfokus pada sistem kesehatan dan aplikasi enterprise.",
         "footer_copy": "&copy; <span id=\"currentYear\"></span> Satrio Mahdii Muhammad."
@@ -115,7 +118,7 @@ const translations = {
         "hero_badge": "<span class=\"h-2 w-2 rounded-full bg-cyanaccent\"></span>Available for Fullstack Developer / Software Engineer opportunities",
         "hero_location": "Bekasi, 17155",
         "hero_role": "Fullstack Developer",
-        "hero_summary": "Fullstack Developer with 2+ years of experience in enterprise application development, specializing in healthcare systems, REST API development, Backend for Frontend (BFF), and system migration.",
+        "hero_summary": "Fullstack Developer with hands-on experience in enterprise application development, specializing in healthcare systems, REST API development, Backend for Frontend (BFF), and system migration. Experienced in using Angular, .NET Web API, SQL Server, and Azure DevOps.",
         "cta_projects": "View Projects",
         "cta_cv": "Download CV",
         "cta_contact": "Contact Me",
@@ -170,39 +173,42 @@ const translations = {
         "projects_title": "Selected Projects",
         "project1_label": "Healthcare Claim System",
         "internal_label": "Internal",
-        "project1_desc": "Migrated healthcare claim system from legacy platform into VESTA architecture.",
-        "project1_feature": "<strong class=\"text-white\">Feature highlights:</strong> frontend validation, monitoring dashboard, and backend integration.",
-        "project1_arch": "<strong class=\"text-white\">Architecture:</strong> Developed REST APIs, Stored Procedures, Angular modules, and BFF services.",
+        "project1_desc": "Migrated healthcare claim system from legacy platform into VESTA architecture using BFF.",
+        "project1_feature": "<strong class=\"text-darktext\">Feature highlights:</strong> Developed REST APIs (.NET Web API) and Angular frontend.",
+        "project1_arch": "<strong class=\"text-darktext\">Architecture:</strong> SQL Server Stored Procedures, frontend-backend integration via BFF.",
         "project1_top": "System Migration",
-        "project2_top": "Health Insurance",
-        "project2_label": "Claim Validation",
-        "project2_desc": "Developed health insurance claim validation features.",
-        "project2_feature": "<strong class=\"text-white\">Feature highlights:</strong> Implemented Accident Status, SEP Warning, KKPAK Monitoring, and Delete Protection.",
-        "project2_arch": "<strong class=\"text-white\">Architecture:</strong> Integrated frontend with REST API and SQL Server backend.",
+        "project2_top": "Claim Validation",
+        "project2_label": "VClaim",
+        "project2_desc": "Developed health insurance claim validation features and frontend-backend integration.",
+        "project2_feature": "<strong class=\"text-darktext\">Feature highlights:</strong> Accident Status, SEP Warning, KKPAK Monitoring, and Delete Protection.",
+        "project2_arch": "<strong class=\"text-darktext\">Architecture:</strong> Integrated frontend with REST API and SQL Server backend.",
         "project3_top": "Tournament Management",
-        "project3_label": "Web Application",
+        "project3_label": "Halo Golf Club",
         "demo_label": "Demo",
-        "project3_desc": "Developed fullstack web application using Next.js, PostgreSQL, Docker, Prisma ORM.",
-        "project3_feature": "<strong class=\"text-white\">Feature highlights:</strong> Built tournament registration, pairing generation, live scoring, leaderboard, and scorecard modules.",
-        "project3_arch": "<strong class=\"text-white\">Architecture:</strong> Designed responsive UI and optimized database performance.",
+        "project3_desc": "Fullstack web application for golf tournament registration and live scoring.",
+        "project3_feature": "<strong class=\"text-darktext\">Feature highlights:</strong> Tournament registration, pairing generation, live scoring, and scorecard modules.",
+        "project3_arch": "<strong class=\"text-darktext\">Architecture:</strong> Next.js, PostgreSQL, Docker, Prisma ORM.",
         "skills_kicker": "Skills",
         "skills_title": "Technical Skills",
-        "skills_frontend": "Frontend & Frameworks",
-        "skills_frontend_desc": "Angular, React, Next.js, Laravel, Spring Boot, Bootstrap, Tailwind CSS",
-        "skills_backend": "Backend & API",
-        "skills_backend_desc": ".NET Web API, ASP.NET MVC, REST API, Backend for Frontend (BFF)",
-        "skills_database": "Databases",
-        "skills_database_desc": "SQL Server, Oracle, PostgreSQL, MySQL",
-        "skills_tools": "DevOps & Tools",
-        "skills_tools_desc": "Git, Azure DevOps, Docker, phpMyAdmin, GitLab, Bitbucket, Trello, Visual Studio, VS Code, Postman, SSMS, Android Studio",
+        "skills_cat1": "Programming Languages",
+        "skills_cat2": "Frontend & Frameworks",
+        "skills_cat3": "Backend & API",
+        "skills_cat4": "Databases",
+        "skills_cat5": "DevOps",
+        "skills_cat6": "Tools",
+        "skills_cat7": "Soft Skills",
+        "skills_cat8": "Languages",
+        "skills_lang1": "Indonesian (Native)",
+        "skills_lang2": "English (Proficient)",
+        "skills_lang3": "Japanese (N4)",
         "cert_kicker": "Training",
         "cert_title": "Training and Certifications",
         "contact_kicker": "Contact",
         "contact_title": "Open for Opportunities",
         "contact_desc": "Feel free to contact me for enterprise web development, system modernization, and API-driven applications.",
-        "contact_email": "<span class=\"font-semibold text-white\">Email:</span> <a href=\"mailto:satriomahdi6@gmail.com\" class=\"transition hover:text-cyanaccent\">satriomahdi6@gmail.com</a>",
-        "contact_phone": "<span class=\"font-semibold text-white\">Phone:</span> <a href=\"https://wa.me/6281316405890\" target=\"_blank\" rel=\"noreferrer\" class=\"transition hover:text-cyanaccent\">081316405890</a>",
-        "contact_location": "<span class=\"font-semibold text-white\">Location:</span> Bekasi, 17155",
+        "contact_email": "<span class=\"font-semibold text-darktext\">Email:</span> <a href=\"mailto:satriomahdi6@gmail.com\" class=\"transition hover:text-cyanaccent\">satriomahdi6@gmail.com</a>",
+        "contact_phone": "<span class=\"font-semibold text-darktext\">Phone:</span> <a href=\"https://wa.me/6281316405890\" target=\"_blank\" rel=\"noreferrer\" class=\"transition hover:text-cyanaccent\">081316405890</a>",
+        "contact_location": "<span class=\"font-semibold text-darktext\">Location:</span> Bekasi, 17155",
         "contact_chat": "Chat directly",
         "footer_desc": "Fullstack Developer specializing in healthcare systems and enterprise applications.",
         "footer_copy": "&copy; <span id=\"currentYear\"></span> Satrio Mahdii Muhammad."
@@ -214,8 +220,14 @@ const stackRotatorValues = {
     en: ['Angular', 'React', '.NET Web API', 'SQL Server', 'BFF Architecture', 'Azure DevOps']
 };
 
+const titleRotatorValues = {
+    id: ['Developer', 'Engineer', 'Programmer', 'Architect'],
+    en: ['Developer', 'Engineer', 'Programmer', 'Architect']
+};
+
 let currentLanguage = 'id';
 let stackInterval = null;
+let titleInterval = null;
 
 document.addEventListener('DOMContentLoaded', () => {
     initPreloader();
@@ -305,6 +317,7 @@ function setLanguage(language) {
     });
 
     startStackRotator(language);
+    startTitleRotator(language);
     initYear();
 }
 
@@ -325,6 +338,28 @@ function startStackRotator(language) {
         element.classList.add('opacity-0', 'translate-y-1');
         setTimeout(() => {
             element.textContent = stacks[index];
+            element.classList.remove('opacity-0', 'translate-y-1');
+        }, 180);
+    }, 1800);
+}
+
+function startTitleRotator(language) {
+    const element = document.getElementById('titleRotator');
+    if (!element) return;
+
+    const titles = titleRotatorValues[language] || titleRotatorValues.id;
+    let index = 0;
+    element.textContent = titles[0];
+
+    if (titleInterval) {
+        clearInterval(titleInterval);
+    }
+
+    titleInterval = setInterval(() => {
+        index = (index + 1) % titles.length;
+        element.classList.add('opacity-0', 'translate-y-1');
+        setTimeout(() => {
+            element.textContent = titles[index];
             element.classList.remove('opacity-0', 'translate-y-1');
         }, 180);
     }, 1800);
